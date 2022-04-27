@@ -49,7 +49,6 @@ function App() {
 
   const tokenNPO = new web3.eth.Contract(tokenContract.abi, tokenAddr)
 
-
   window.ethereum.on("accountsChanged", async () => {
     setAccount(window.ethereum.selectedAddress)
   })
